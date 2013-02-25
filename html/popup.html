@@ -1,0 +1,495 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body 
+            { 
+                min-width: 375px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px;
+				overflow:scroll;
+            }
+            input, textarea { width: 420px; }
+            input#save { font-weight: bold; width: auto; }
+
+			.clear{
+				clear:both;
+			}
+
+			.main_cont{
+				width:645px;
+				margin:0;
+				padding:0;
+			}
+
+			.img_cont{
+				float:left;
+				width:120px;
+			}
+
+			.numb{
+				display:block;
+				float:left;
+				width:10px;
+			}
+
+			.img{
+				float:left;
+				padding-left:18px;
+				
+			}
+
+			.content2{
+				float:left;
+				width:500px;
+			}
+
+			.anc_head a{				
+				color:#0000FF;
+				font-size:14px;
+				/*padding-left:15px;david*/
+			}
+
+			.sml_cont{
+				width: 220px;
+				float:left;
+				margin:5px 0 0;
+			}
+
+			.price{
+				color:#000000;
+				font-weight:bold;
+				font-family:Arial, Helvetica, sans-serif;
+				padding:0 10px 0 0;	
+				/*padding-left:15px;david*/
+			}
+
+			.mrn{
+				color:#990000;
+				font-size:12px;
+			}
+			.rd{
+				color:#FF0000;
+				font-weight:bold;
+			}
+			
+			.btn_cont{
+				float: left;
+				margin-top: 10px;
+				width: 279px;
+			}
+			
+			.btn_cont img{
+				padding:0 1px 0 0;	
+				
+			}
+
+			/* CSS Document */
+			.clear{
+				clear:both;
+			}
+
+			.wrapper{
+				width:360px;
+				margin:0 auto;
+				border:1px solid #999999;
+			}
+
+			.wrapper_inner{
+				padding:9px 13px;
+			}	
+
+			.logo{
+				float:left;
+				width:67px;
+			}
+			
+			.heading{
+				float:left;
+				font:bold 26px "Myriad Pro" , arial;
+				color:#a6c947;
+				width:100px; 
+				padding-left:72px;
+				margin-bottom:25px;
+			}
+			
+			.input_cont{
+				margin:0 0 19px 17px;
+			}
+			
+			.input_bg{
+				background:url(../images/input_bg.jpg) no-repeat;
+				padding: 0 12px;
+				line-height:30px;
+				border:0;
+				outline:none;
+				width:279px;
+				height:30px;
+				color:#bcbcbc;
+				font:12px Arial, Helvetica, sans-serif;
+				
+			}
+			
+			.submit_cont{
+				text-align:center;
+				margin-bottom:14px;
+			}
+			
+			.submit_bg{
+				background:url(../images/sign_in.jpg) no-repeat;
+				width:135px;
+				height:30px;
+				border:0;
+				cursor:pointer;
+			}
+			
+			.btm_cont{
+				text-align:center;
+			}
+			
+			.btm_cont span{
+				padding:0 1px 0 16px;
+			}
+			
+			.btm_cont span a{
+				font:12px Arial, Helvetica, sans-serif;
+				color:#000;
+			}
+
+			/*New Classes*/
+			.btm_cont span.new{
+				padding:0 10px 0 0;
+			}
+
+			.btm_cont span.new2{
+				padding:0 8px 0 0px;
+			}
+
+			.btm_cont span.new3{
+				padding:0 70px 0 0;
+			}
+
+			.submit_bg2{
+				background:url(../images/sign_up.png) no-repeat;
+				width:135px;
+				height:30px;
+				border:0;
+				cursor:pointer;
+			}
+
+			.submit_bg3{
+				background:url(../images/sign_in_as_a_guest.png) no-repeat;
+				width:160px;
+				height:30px;
+				border:0;
+				cursor:pointer;
+			}
+
+			.heading2{
+				float:left;
+				font:bold 26px "Myriad Pro" , arial;
+				color:#a6c947;
+				width:100px; 
+				padding-left:50px;
+				margin-bottom:25px;
+			}
+
+			.heading3{
+				color: #A6C947;
+				float: left;
+				font: bold 26px "Myriad Pro",arial;
+				margin:30x 0  25px 0;
+				padding-left: 5px;
+			}
+
+			/*New Classes*/
+			.buy_now {
+				clear:both;
+				margin:0;
+				padding:0;
+				float:left;
+			}
+			.buy_now p {
+				font:11px Arial, Helvetica, sans-serif;
+				color:#000;
+				padding:0;
+				margin:0;
+			}
+			.buy_now p a {
+				font:11px Arial, Helvetica, sans-serif;
+				color:#000;
+				padding:0 0 0 10px;
+				margin:0;
+				text-decoration:underline;
+			}
+			.product1 {
+				padding:0;
+				float:left;
+				clear:both;
+				margin:15px 0 0 0;
+				height:98px;
+				border: 1px solid #999999;
+				width: 550px;
+			}
+			.product_item {
+				float:left;
+				padding:0;
+				margin:0;
+			}
+			.product_item img {
+				width:79px;
+				height:73px;
+				padding:13px 7px 13px 4px;
+				float:left;
+			}
+			.product_detail {
+				float:left;
+				padding:0;
+				margin:0;
+				width:440px;
+				
+			}
+			.product_detail p {
+				float:left;
+				padding:14px 0 0 10px;
+				margin:0;
+				width:350px;
+			}
+			.buy_now p a {
+				font:11px Arial, Helvetica, sans-serif;
+				color:#587900;
+				padding:0;
+				margin:0;
+				text-decoration:underline;
+			}
+			.Current {
+				font:11px Arial, Helvetica, sans-serif;
+				color:#010101;
+				clear:both;
+				float:left;
+				padding:0;
+				margin:5px 5px 0 10px;
+			}
+			.pound {
+				font:11px Arial, Helvetica, sans-serif;
+				color:#010101;
+				float:left;
+				padding:0;
+				margin:5px 0 0 0;
+			}
+			.lower {
+				font:11px Arial, Helvetica, sans-serif;
+				color:#ff0000;
+				float:left;
+				padding:0;
+				margin:5px 15px 0 0;
+			}
+			.product_detail a img {
+				float:left;
+				padding:0 7px 0 0;
+				margin:0;
+			}
+			.text1
+				{
+					width:400px;
+					float:left;
+				}
+			.text2 {
+					width:190px;
+					float:left;
+				}
+			.buttons {
+					width:250px;
+					float:left;
+				}
+        </style>
+		<script src="../js/jquery.min.js" type="text/javascript"></script>
+		<script src="../js/popup.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../js/addthis_widget.js"></script>
+    </head>
+    <body id="checkCookie">
+
+		<!--<div class="wrapper2">-->
+			<div class="wrapper_inner" id="alreadyLogIn" style="display:none">
+				<div class="logo"><img src="../images/logo.png" alt="" /></div>
+				<div class="buy_now">
+					<p><strong id="userInfo"></strong>&nbsp;<a href="#" class="Signout" >Signout</a></p>
+					<!----------------------------------------------->
+					<div id="itemDetails">
+					</div>
+					<!----------------------------------------------->
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		<!--</div>-->
+
+		<!--<div id="alreadyLogIn" style="display:none">
+			<p><strong id="userInfo"></strong>&nbsp;<a href="#" class="Signout" >Signout</a><br />
+			<!--<a href="#" class="openSignin" >Sign in as Different User</a></br>
+			<a href="#" class="openSignup" >New User Sign Up!</a>
+			<hr>-->
+
+			<!----------------------------------------------->
+			<div id="itemDetails" >
+			</div>
+			<!----------------------------------------------->
+		</div>
+
+		<!--<div id="formSigninDIV">
+			<form id="formSignin" name="formSignin">
+				<p><strong id="ActSuccMessage"></strong></p>
+				<p><strong>Log In</strong></p><br />
+				<p><label for="usrnameSI">Username (Email)</label><br />
+				<input type="text" id="usrnameSI" name="usrnameSI" size="50" value="" tabindex="1" /></p>
+				<p><label for="usrpassword">Password</label><br />
+				<input type="password" id="usrpasswordSI" name="usrpasswordSI" size="50" value="" tabindex="2" /></p>
+				<p align="center"><input id="savelog" name="savelog" type="button" value="Sign In"  tabindex="3" />&nbsp;<a tabindex="4" href="#" class="openSignup" >Sign Up</a>&nbsp;&nbsp;&nbsp;<a tabindex="5" href="#" class="openGenUUID" >Sign in as a guest</a></p>
+			</form>
+		</div>-->
+		
+		<!---------------------------------------------------------------------------------------------------------->
+
+		<!--<div class="wrapper">-->
+			<div id="formSigninDIV" class="wrapper_inner">
+				<div class="logo"><img src="../images/logo.png" alt="" /></div>
+
+				<h1 class="heading">Log in</h1>
+				<div class="clear"></div>
+				<p align="center"><strong id="ActSuccMessage"></strong></p>
+				<form id="formSignin" name="formSignin">
+					<div class="input_cont">
+						<input type="text" id="usrnameSI" name="usrnameSI" class="input_bg" value="User Name / Email" tabindex="1" title="0" />
+					</div>
+
+					<div class="input_cont">
+						<input type="text" id="usrpasswordSI" name="usrpasswordSI" class="input_bg"  value="Password" abindex="2" />
+					</div>
+
+					<div class="submit_cont">
+						<input id="savelog" name="savelog" type="button" class="submit_bg" value="" tabindex="3" />
+					</div>
+
+					<div class="btm_cont">
+						<span><a tabindex="4" href="#" class="openSignup">Create Account</a></span><span><a tabindex="5" href="#" class="openGenUUID">Sign in as a guest</a></span>
+					</div>
+				</form>
+				<div class="clear"></div>
+
+			</div>
+
+			<div class="clear"></div>
+		<!--</div>-->
+		<!---------------------------------------------------------------------------------------------------------->
+		<!--border:1px solid #CCCCCC; padding-left:2px;padding-right:2px; 
+		document.getElementById("formSignupDIV").style.display = 'block';
+				//document.getElementById("formSignup").setAttribute('display','block');;
+				//alert('its me again');
+				document.getElementById("formSigninDIV").style.display = 'none';-->
+		<!--<div id="formSignupDIV" style="display:none">
+			<form id="formSignup" name="formSignup" >
+				<p><strong id="SUMessage"></strong></p>
+				<p><strong>Signup</strong></p><br />
+				<p><label for="usernameFnameSU">First Name</label><br />
+				<input type="text" id="usernameFnameSU" name="usernameFnameSU" size="50" value="" /></p>
+				<p><label for="usernameLnameSU">Last Name</label><br />
+				<input type="text" id="usernameLnameSU" name="usernameLnameSU" size="50" value="" /></p>
+				<p><label for="usernameSU">Username (Email)</label><br />
+				<input type="text" id="usernameSU" name="usernameSU" size="50" value="" /></p>
+				<p><label for="usrpassword">Password</label><br />
+				<input type="password" id="usrpassword" name="usrpassword" size="50" value="" /></p>
+				<p><label for="usrpasswordR">Password</label><br />
+				<input type="password" id="usrpasswordR" name="usrpasswordR" size="50" value="" /></p>
+				<p align="center"><input id="savesup" type="button" value="Signup" />&nbsp;<a href="#" class="openSignin" >Already Have an Account? - Sign In</a> </p>
+			</form>
+		</div>-->
+
+		<div id="formSignupDIV" style="display:none" class="wrapper_inner">
+
+			<div class="logo"><img src="../images/logo.png" alt="" /></div>
+
+			<h1 class="heading2">Sign Up</h1>
+			<div class="clear"></div>
+
+			<p align="center" ><strong id="SUMessage"></strong></p>
+			<form id="formSignup" name="formSignup" >
+				<div class="input_cont">
+					<input type="text" id="usernameFnameSU" name="usernameFnameSU" class="input_bg" value="First Name" title="0" />
+				</div>
+
+				<div class="input_cont">
+					<input type="text" id="usernameLnameSU" name="usernameLnameSU" class="input_bg" value="Last Name" title="0" />
+				</div>
+
+				<div class="input_cont">
+					<input type="text" id="usernameSU" name="usernameSU" class="input_bg" value="Username (Email)" title="0" />
+				</div>
+
+				<div class="input_cont">
+					<input type="text" id="usrpassword" name="usrpassword" class="input_bg" value="Password" title="0" />
+				</div>
+
+				<div class="input_cont">
+					<input type="text" id="usrpasswordR" name="usrpasswordR" class="input_bg" value="Password" title="0" />
+				</div>
+
+				<div class="submit_cont">
+					<input id="savesup" name="savesup" type="button" class="submit_bg2"  value="" />
+				</div>
+
+				<div class="btm_cont">
+					<span class="new2"><a href="#" class="openSignin" >Already Have an Account? - Sign In</a></span><!--<span class="new3"><a href="#">Sign In</a></span>-->
+				</div>
+			</form>
+
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+
+		<!--<div id="formGenerateUUIDDIV" style="display:none">
+			<form id="formGuuid" name="formGuuid" >
+				<p><strong id="generateUUIDMessage"></strong></p>
+				<p><strong>Sign in as a guest</strong></p><br />
+				<p><label for="usernameFnameUUID">First Name</label><br />
+				<input type="text" id="usernameFnameUUID" name="usernameFnameUUID" size="40" value="" /></p>
+				<p><label for="usernameLnameUUID">Last Name</label><br />
+				<input type="text" id="usernameLnameUUID" name="usernameLnameUUID" size="40" value="" /></p>
+				<p align="center"><input id="saveuuid" type="button" value="Sign in as a guest" />&nbsp;<a href="#" class="openSignin" >Cancel</a></p>
+			</form>
+		</div>-->
+
+		<div id="formGenerateUUIDDIV" style="display:none" class="wrapper_inner">
+
+			<div class="logo"><img src="../images/logo.png" alt="" /></div>
+
+			<h1 class="heading3">Sign in as a Guest</h1>
+			
+			<div class="clear"></div>
+
+			<p align="center"><strong id="generateUUIDMessage"></strong></p>
+			<form id="formGuuid" name="formGuuid" >
+				<div class="input_cont">
+					<input type="text" id="usernameFnameUUID" name="usernameFnameUUID" class="input_bg" value="First Name" title="0" />
+				</div>
+
+				<div class="input_cont">
+					<input type="text" id="usernameLnameUUID" name="usernameLnameUUID" class="input_bg" value="Last Name" title="0" />
+				</div>
+
+				<div class="submit_cont">
+					<input id="saveuuid" type="button" class="submit_bg3" value="" />
+				</div>
+
+				<div class="btm_cont">
+					<span class="new"><a href="#" class="openSignin" >Cancel</a></span>
+				</div>
+			</form>
+
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+
+    </body>
+</html>

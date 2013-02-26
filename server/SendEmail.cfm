@@ -34,8 +34,8 @@
 	<cfif total_rows GT 0>
 		<cfloop query="TotalEmailCheck">
 			<!--------------------------------------------------------------------------->
-			<cfset SecretAccessKey = "9N8XPp9XcWCOcwBcbPnPqjBm38/+GiEQHy/5/wNs" >
-			<cfset AWSAccessKeyId = "AKIAJM6SUKYFP7RFRV2Q" >
+			<cfset SecretAccessKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" >
+			<cfset AWSAccessKeyId = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" >
 			<cfset AssociateTag = "ws" >
 			<cfset ItemId = #TotalEmailCheck.product_number# >
 			<cfset Operation = "ItemLookup" >
@@ -80,7 +80,7 @@
 			<cfdump var="#(replace(APICPrice,'$','') EQ TotalEmailCheck.current_price)#" /><br><br>--->
 
 			<cfif (TotalEmailCheck.notify_on_any_drop EQ 0) AND (TotalEmailCheck.notify_when_in_stock EQ 0) AND (replace(APICPrice,'$','') EQ TotalEmailCheck.target_price)>
-				<cfmail to="#TotalEmailCheck.email#" from="support@clockshare.com" subject="ePriceDrop Alert." type="html" >
+				<cfmail to="#TotalEmailCheck.email#" from="xxx@xxx.com" subject="ePriceDrop Alert." type="html" >
 					Dear #TotalEmailCheck.last_name#,<br><br>
 
 					One of the products that you followed on ePriceDrop has reached your desired condition. Please take a look, 						it may interest you:<br>
@@ -95,7 +95,7 @@
 			</cfif>
 <br><br>
 			<cfif (TotalEmailCheck.notify_on_any_drop EQ 1) AND (TotalEmailCheck.notify_when_in_stock EQ 0)  AND (replace(APICPrice,'$','') LT TotalEmailCheck.current_price)>
-				<cfmail to="#TotalEmailCheck.email#" from="support@clockshare.com" subject="ePriceDrop Alert." type="html">
+				<cfmail to="#TotalEmailCheck.email#" from="xxx@xxx.com" subject="ePriceDrop Alert." type="html">
 					Dear #TotalEmailCheck.last_name#,<br><br>
 
 					One of the products that you followed on ePriceDrop has reached your desired condition. Please take a look, 						it may interest you:<br>
@@ -111,7 +111,7 @@
 <br><br>
 			<cfif (TotalEmailCheck.notify_on_any_drop EQ 0) AND (TotalEmailCheck.notify_when_in_stock EQ 1) AND (Avail EQ 'Usually ships in 24 hours')>
 
-				<cfmail to="#TotalEmailCheck.email#" from="support@clockshare.com" subject="ePriceDrop Alert." type="html">
+				<cfmail to="#TotalEmailCheck.email#" from="xxx@xxx.com" subject="ePriceDrop Alert." type="html">
 					Dear #TotalEmailCheck.last_name#,<br><br>
 
 					One of the products that you followed on ePriceDrop has reached your desired condition. Please take a look, 						it may interest you:<br>

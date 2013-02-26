@@ -8,8 +8,8 @@
 	   <cfreturn toBase64(mac.doFinal(signMsg.getBytes())) />
 	</cffunction>
 	
-	<cfset SecretAccessKey = "9N8XPp9XcWCOcwBcbPnPqjBm38/+GiEQHy/5/wNs" >
-	<cfset AWSAccessKeyId = "AKIAJM6SUKYFP7RFRV2Q" >
+	<cfset SecretAccessKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" >
+	<cfset AWSAccessKeyId = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" >
 	<cfset AssociateTag = "ws" >
 	<cfset ItemId = #url.item# >
 	<cfset Operation = "ItemLookup" >

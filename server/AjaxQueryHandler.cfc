@@ -120,9 +120,9 @@
 	</cffunction>
 
 	<cffunction name="GetApi" access="remote" returntype="any" returnFormat="JSON">
-		<cfset SecretAccessKey = "9N8XPp9XcWCOcwBcbPnPqjBm38/+GiEQHy/5/wNs" >
+		<cfset SecretAccessKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" >
 
-		<cfset AWSAccessKeyId = "AKIAJM6SUKYFP7RFRV2Q" >
+		<cfset AWSAccessKeyId = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" >
 		<cfset AssociateTag = "ws" >
 		<cfset ItemId = #url.urlItemId# >
 		<cfset Operation = "ItemLookup" >
